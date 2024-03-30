@@ -66,6 +66,7 @@ const H2 = () => {
     }
   };
   const handlenext = () => {
+    setgift((prev) => !prev);
     const s3 = document.getElementById("s5");
     if (s3) {
       s3.scrollIntoView({ behavior: "smooth" });
@@ -74,24 +75,21 @@ const H2 = () => {
 
   return (
     <div className="min-h-1vh w-1vw ">
-      <section className="bg-black min-h-screen pt-20 flex-grow">
-        <div className="flex flex-col gap-8 justify-center items-center">
-          <div className="w-2/3 h-48 cat"></div>
-          <div className="flex flex-wrap justify-center gap-6">
-            <h1 className="text-white text-lg font-semibold w-lvw">
-              Am i your favourate??
-            </h1>
-            <div className="flex justify-center w-1vw items-center gap-6">
-              <button className=" bg-yellow-500 px-6 py-2 rounded-lg font-semibold text-lg active:bg-red-500">
-                No
-              </button>
-              <button
-                onClick={handleYes}
-                className=" bg-yellow-500 px-6 py-2 rounded-lg font-semibold text-lg active:bg-green-500"
-              >
-                Yes
-              </button>
-            </div>
+      <section id="s1">
+        <div className="flex flex-col gap-8 justify-start items-center bgmy min-h-screen pt-20 ">
+          <h1 className="text-white text-xl font-semibold w-lvw">
+            Am i your favourate.. ??
+          </h1>
+          <div className="flex justify-center w-1vw items-center gap-6">
+            <button className=" bg-yellow-500 shadow-md shadow-black px-8 py-2 rounded-lg font-semibold text-lg active:bg-red-500">
+              No
+            </button>
+            <button
+              onClick={handleYes}
+              className=" bg-yellow-500  shadow-md shadow-black px-8 py-2 rounded-lg font-semibold text-lg active:bg-green-500"
+            >
+              Yes
+            </button>
           </div>
         </div>
       </section>

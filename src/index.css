@@ -60,3 +60,8 @@ code {
   background-position: center;
   background-size: cover;
 }
+.bgmy {
+  background-image: url("./mybg.jpg");
+  background-position: center;
+  background-size: cover;
+}
