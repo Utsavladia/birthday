@@ -1,13 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.home {
+  background-image: url("./bghome.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.cat {
+  background-image: url("./bgcat.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.bg1 {
+  background-image: url("./f2.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.bg2 {
+  background-image: url("./bg4.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.text-shadow {
+  text-shadow: 0 0px 10px orangered;
+}
+
+.noshadow {
+  text-shadow: none;
+}
+
+.text-shadow-pink {
+  text-shadow: 0 0px 10px pink;
+}
+.text-shadow-black {
+  text-shadow: 0 0 10px black;
+}
+
+.bg3 {
+  background-image: url("./gbg.jpg");
+  background-position: center;
+  background-size: cover;
 }
