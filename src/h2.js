@@ -130,7 +130,7 @@ const H2 = () => {
         </div>
       </section>
       <section id="s5">
-        <div className="bg2 min-h-screen relative w-screen flex flex-col ">
+        <div className="bg2 min-h-screen relative w-screen flex flex-col justify-between  ">
           <div className=" font-extrabold  text-4xl text-white mt-12 text-shadow-black backdrop-blur-lg">
             <h1>
               Happist
@@ -157,7 +157,7 @@ const H2 = () => {
           </div>
           <button
             onClick={handlewish}
-            className="bg-purple-500 w-28 ml-auto mr-auto py-2 px-4 rounded-lg bg-opacity-50 font-semibold roundfont border border-orange-500 text-xl text-white  text-shadow mt-4"
+            className="bg-purple-500 w-28 ml-auto mr-auto mb-10 py-2 px-4 rounded-lg bg-opacity-50 font-semibold roundfont border border-orange-500 text-xl text-white  text-shadow mt-4"
           >
             Next ⇩
           </button>
