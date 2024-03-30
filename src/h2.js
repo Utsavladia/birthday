@@ -65,6 +65,13 @@ const H2 = () => {
       s4.scrollIntoView({ behavior: "smooth" });
     }
   };
+
+  const handlecake = () => {
+    const sc = document.getElementById("sc");
+    if (sc) {
+      sc.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   const handlenext = () => {
     setgift((prev) => !prev);
     const s3 = document.getElementById("s5");
@@ -77,16 +84,16 @@ const H2 = () => {
     <div className="min-h-1vh w-1vw ">
       <section id="s1">
         <div className="flex flex-col gap-8 justify-start items-center bgmy min-h-screen pt-20 ">
-          <h1 className="text-white text-xl font-semibold w-lvw">
+          <h1 className="text-white text-2xl font-semibold w-lvw">
             Am i your favourate.. ??
           </h1>
           <div className="flex justify-center w-1vw items-center gap-6">
-            <button className=" bg-yellow-500 shadow-md shadow-black px-8 py-2 rounded-lg font-semibold text-lg active:bg-red-500">
+            <button className="bg-orange-500  py-2 px-6 rounded-lg bg-opacity-60 font-semibold roundfont border border-orange-500 text-xl text-white  text-shadow mt-4">
               No
             </button>
             <button
               onClick={handleYes}
-              className=" bg-yellow-500  shadow-md shadow-black px-8 py-2 rounded-lg font-semibold text-lg active:bg-green-500"
+              className="bg-orange-500  py-2 px-6 rounded-lg bg-opacity-60 font-semibold roundfont border border-orange-500 text-xl text-white  text-shadow mt-4"
             >
               Yes
             </button>
@@ -119,7 +126,7 @@ const H2 = () => {
           )}
           {gift && (
             <button
-              onClick={handlenext}
+              onClick={handlecake}
               className="bg-orange-500 py-2 px-4 rounded-lg bg-opacity-50 font-semibold roundfont border border-orange-500 text-xl text-white  text-shadow mt-4"
             >
               Next ⇩
@@ -127,10 +134,25 @@ const H2 = () => {
           )}
         </div>
       </section>
+      <section id="sc">
+        <div className="min-h-screen h-screen flex flex-col justify-start pt-20 pb-20 items-center bgcake">
+          <h1 className="text-xl text-white text-shadow-pink bg-black bg-opacity-30 backdrop-blur-lg w-full py-2">
+            "You are as sweet as this cake..
+            <br />
+            But cake is tastier than you.."
+          </h1>
+          <button
+            onClick={handlenext}
+            className="bg-blue-400 py-2 px-4 rounded-lg bg-opacity-50 font-semibold roundfont border border-yellow-500 text-xl text-white  text-shadow mt-8"
+          >
+            Next ⇩
+          </button>
+        </div>
+      </section>
       <section id="s5">
         <div className="bg2 min-h-screen relative w-screen flex flex-col justify-between  ">
           <div className=" font-extrabold  text-4xl text-white mt-12 text-shadow-black backdrop-blur-lg">
-            <h1>
+            <h1 className="cursive text-5xl">
               Happist
               <br /> Birthday
             </h1>

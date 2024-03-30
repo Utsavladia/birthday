@@ -7,7 +7,7 @@ const Imgcard = ({ image, message }) => {
         className="w-60 h-56 rounded-lg overflow-hidden object-cover items-center "
         src={image}
       />
-      <h1 className="mt-4 text-white text-shadow text-lg font-semibold">
+      <h1 className="mt-4 text-white text-shadow-pink text-lg font-semibold">
         {message}
       </h1>
     </div>
