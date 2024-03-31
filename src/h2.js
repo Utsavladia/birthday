@@ -113,11 +113,18 @@ const H2 = () => {
         <div
           className={`min-h-screen ${
             gift ? "bg1" : "bg-black"
-          } flex flex-col items-center justify-between py-20 relative transition-all duration-1000`}
+          } flex flex-col items-center justify-between py-24 relative transition-all duration-1000`}
         >
           {!gift && (
-            <h1 className="font-semibold roundfont  text-xl text-white  text-shadow p-4 ">
-              "Just because you chose me <br /> as your favorite..." <br />
+            <h1 className="font-semibold roundfont  text-2xl text-white  text-shadow p-4 mt-8 ">
+              {/* "Just because you chose me <br /> as your favorite..." <br /> */}
+              <Typewriter
+                options={{
+                  strings: ["Just because you chose me as your favorite..."],
+                  autoStart: true,
+                  loop: true,
+                }}
+              />
             </h1>
           )}
           {gift && (
@@ -170,7 +177,7 @@ const H2 = () => {
               <div className="text-purple-900 font-bold">
                 <Typewriter
                   options={{
-                    strings: ["Cutie", "Little", "Puchhi"],
+                    strings: ["Cutie", "Paglii", "Pyari", "Gadhi", "Puchhi"],
                     autoStart: true,
                     loop: true,
                   }}
