@@ -11,6 +11,7 @@ import i3 from "./images/i3.jpg";
 import i4 from "./images/i4.jpg";
 import i5 from "./images/i5.jpg";
 import i6 from "./images/i6.jpg";
+import glass from "./videos/glass.mp4";
 
 const cards = [
   {
@@ -82,18 +83,26 @@ const H2 = () => {
 
   return (
     <div className="min-h-1vh w-1vw ">
-      <section id="s1">
-        <div className="flex flex-col gap-8 justify-start items-center bgmy min-h-screen pt-20 ">
-          <h1 className="text-white text-2xl font-semibold w-lvw">
+      <section id="s1" className="relative">
+        <video
+          src={glass}
+          className="inset-0 w-full h-full object-cover"
+          autoPlay
+          loop
+          muted
+          playsInline
+        />
+        <div className="flex flex-col gap-8 justify-between items-center absolute top-0 left-0 w-screen min-h-screen pt-20 pb-16 ">
+          <h1 className="text-white text-2xl  text-shadow-pink font-semibold w-lvw">
             Am i your favourate.. ??
           </h1>
           <div className="flex justify-center w-1vw items-center gap-6">
-            <button className="bg-orange-500  py-2 px-6 rounded-lg bg-opacity-60 font-semibold roundfont border border-orange-500 text-xl text-white  text-shadow mt-4">
+            <button className="bg-purple-500 py-2 px-4 rounded-lg bg-opacity-50 font-semibold roundfont border border-purple-500 text-xl text-white  text-shadow mt-8">
               No
             </button>
             <button
               onClick={handleYes}
-              className="bg-orange-500  py-2 px-6 rounded-lg bg-opacity-60 font-semibold roundfont border border-orange-500 text-xl text-white  text-shadow mt-4"
+              className="bg-purple-500 py-2 px-4 rounded-lg bg-opacity-50 font-semibold roundfont border border-purple-500 text-xl text-white  text-shadow mt-8"
             >
               Yes
             </button>
@@ -135,15 +144,15 @@ const H2 = () => {
         </div>
       </section>
       <section id="sc">
-        <div className="min-h-screen h-screen flex flex-col justify-start pt-20 pb-20 items-center bgcake">
+        <div className="min-h-screen h-screen flex flex-col justify-between pt-20 pb-16 items-center bggirl">
           <h1 className="text-xl text-white text-shadow-pink bg-black bg-opacity-30 backdrop-blur-lg w-full py-2">
-            "You are as sweet as this cake..
+            "You are as sweet as your cake..
             <br />
             But cake is tastier than you.."
           </h1>
           <button
             onClick={handlenext}
-            className="bg-blue-400 py-2 px-4 rounded-lg bg-opacity-50 font-semibold roundfont border border-yellow-500 text-xl text-white  text-shadow mt-8"
+            className="bg-purple-500 py-2 px-4 rounded-lg bg-opacity-50 font-semibold roundfont border border-purple-500 text-xl text-white  text-shadow mt-8"
           >
             Next ⇩
           </button>
