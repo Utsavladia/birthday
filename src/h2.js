@@ -92,7 +92,7 @@ const H2 = () => {
           muted
           playsInline
         />
-        <div className="flex flex-col gap-8 justify-between items-center absolute top-0 left-0 w-screen min-h-screen pt-20 pb-16 ">
+        <div className="flex flex-col gap-8 justify-between items-center absolute top-0 left-0 w-screen h-full pt-20 pb-16 ">
           <h1 className="text-white text-2xl  text-shadow-pink font-semibold w-lvw">
             Am i your favourate.. ??
           </h1>
