@@ -43,7 +43,6 @@ const cards = [
 
 const H2 = () => {
   const [gift, setgift] = useState(false);
-  const [celeb, setCeleb] = useState(false);
   const handlegift = () => {
     setgift((prev) => !prev);
   };
@@ -62,7 +61,6 @@ const H2 = () => {
   };
 
   const handlecelebrate = async () => {
-    await setCeleb(true);
     const s4 = document.getElementById("s4");
     if (s4) {
       s4.scrollIntoView({ behavior: "smooth" });
@@ -214,19 +212,18 @@ const H2 = () => {
           </button>
         </div>
       </section>
-      {celeb && (
-        <section id="s4">
-          <div className="min-h-screen relative w-screen">
-            <video
-              src={bgvdo}
-              className="absolute inset-0 w-full h-full object-cover"
-              autoPlay
-              loop
-              playsInline
-            ></video>
-          </div>
-        </section>
-      )}
+
+      <section id="s4">
+        <div className="min-h-screen relative w-screen">
+          <video
+            src={bgvdo}
+            className="absolute inset-0 w-full h-full object-cover"
+            autoPlay
+            loop
+            playsInline
+          ></video>
+        </div>
+      </section>
     </div>
   );
 };
