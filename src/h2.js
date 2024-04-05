@@ -256,13 +256,12 @@ const H2 = () => {
             ref={secondVideoRef}
             src={dance}
             className="absolute inset-0 w-full h-full object-cover"
-            autoPlay
             loop
             playsInline
           ></video>
         </div>
       </section>
-      <section className="flex justify-start   flex-col min-h-screen bgme bg-black text-white text-shadow-pink items-center">
+      <section className="flex justify-start flex-col min-h-screen bgme bg-black text-white text-shadow-pink items-center">
         <h1 className="text-xl mt-10 mb-2">Happist Birthday Cutie</h1>
         <p>Enjoyyy your dayyy...</p>
       </section>
