@@ -6,7 +6,7 @@ import H2 from "./h2";
 function App() {
   return (
     <div className="App ">
-      <Home />
+      {/* <Home /> */}
       <H2 />
     </div>
   );

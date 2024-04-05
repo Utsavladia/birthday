@@ -84,6 +84,13 @@ const H2 = () => {
     }
   };
 
+  const handlestart = () => {
+    const s = document.getElementById("s1");
+    if (s) {
+      s.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   const handledance = () => {
     if (firstVideoRef.current) {
       firstVideoRef.current.pause();
@@ -101,6 +108,16 @@ const H2 = () => {
 
   return (
     <div className="min-h-1vh w-1vw ">
+      <section id="s">
+        <div className=" min-h-lvh w-1vw p-6 relative home flex justify-center items-end">
+          <button
+            className="bg-orange-500 py-2 px-4 rounded-lg bg-opacity-50 font-semibold roundfont border border-orange-500 text-xl text-white  text-shadow mb-8"
+            onClick={handlestart}
+          >
+            Tap here
+          </button>
+        </div>
+      </section>
       <section id="s1" className="relative">
         <video
           src={glass}
@@ -134,15 +151,15 @@ const H2 = () => {
           } flex flex-col items-center justify-between py-24 relative transition-all duration-1000`}
         >
           {!gift && (
-            <h1 className="font-semibold roundfont  text-2xl text-white  text-shadow p-4 mt-8 ">
-              {/* "Just because you chose me <br /> as your favorite..." <br /> */}
-              <Typewriter
+            <h1 className="font-semibold roundfont  text-2xl text-white  text-shadow-pink p-4 mt-8 ">
+              "Just because you chose me <br /> as your favorite..." <br />
+              {/* <Typewriter
                 options={{
                   strings: ["Just because you chose me as your favorite..."],
                   autoStart: true,
                   loop: true,
                 }}
-              />
+              /> */}
             </h1>
           )}
           {gift && (
