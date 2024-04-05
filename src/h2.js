@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import Typewriter from "typewriter-effect";
 import "./index.css";
 import "./style.css";
@@ -12,6 +12,7 @@ import i4 from "./images/i4.jpg";
 import i5 from "./images/i5.jpg";
 import i6 from "./images/i6.jpg";
 import glass from "./videos/glass.mp4";
+import dance from "./videos/dancing.mp4";
 
 const cards = [
   {
@@ -43,6 +44,8 @@ const cards = [
 
 const H2 = () => {
   const [gift, setgift] = useState(false);
+  const firstVideoRef = useRef(null);
+  const secondVideoRef = useRef(null);
   const handlegift = () => {
     setgift((prev) => !prev);
   };
@@ -78,6 +81,21 @@ const H2 = () => {
     const s3 = document.getElementById("s5");
     if (s3) {
       s3.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const handledance = () => {
+    if (firstVideoRef.current) {
+      firstVideoRef.current.pause();
+    }
+    // Play the second video
+    if (secondVideoRef.current) {
+      secondVideoRef.current.play();
+    }
+    // Scroll to the next section
+    const nextSection = document.getElementById("s9");
+    if (nextSection) {
+      nextSection.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -214,15 +232,39 @@ const H2 = () => {
       </section>
 
       <section id="s4">
-        <div className="min-h-screen relative w-screen">
+        <div className="min-h-screen flex justify-center relative w-screen">
           <video
+            ref={firstVideoRef}
             src={bgvdo}
             className="absolute inset-0 w-full h-full object-cover"
             autoPlay
             loop
             playsInline
           ></video>
+          <button
+            onClick={handledance}
+            className="absolute bottom-10 text-shadow-pink font-semibold roundfont text-xl mt-10  px-4 py-2 rounded-lg border border-pink-500 bg-pink-700 bg-opacity-40 text-white "
+          >
+            ⌲ Let's Dance
+          </button>
         </div>
+      </section>
+
+      <section id="s9">
+        <div className="min-h-screen relative w-screen">
+          <video
+            ref={secondVideoRef}
+            src={dance}
+            className="absolute inset-0 w-full h-full object-cover"
+            autoPlay
+            loop
+            playsInline
+          ></video>
+        </div>
+      </section>
+      <section className="flex justify-start   flex-col min-h-screen bgme bg-black text-white text-shadow-pink items-center">
+        <h1 className="text-xl mt-10 mb-2">Happist Birthday Cutie</h1>
+        <p>Enjoyyy your dayyy...</p>
       </section>
     </div>
   );

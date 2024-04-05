@@ -71,3 +71,9 @@ code {
   background-position: center;
   background-size: cover;
 }
+
+.bgme {
+  background-image: url("./bgme.jpg");
+  background-position: center;
+  background-size: cover;
+}
