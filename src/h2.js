@@ -31,14 +31,15 @@ const cards = [
     image: i4,
     message: "Keep my dark secrets in dark.. as this pic !",
   },
+
+  {
+    image: i6,
+    message: "You catch my double meaning jokes too quick",
+  },
   {
     image: i5,
     message:
       "Always keep some space in your small brain for memories we create..",
-  },
-  {
-    image: i6,
-    message: "You catch my double meaning jokes too quick",
   },
 ];
 
@@ -279,7 +280,7 @@ const H2 = () => {
         </div>
       </section>
       <section className="flex justify-start flex-col min-h-screen bgme bg-black text-white text-shadow-pink items-center">
-        <h1 className="text-xl mt-10 mb-2">Happist Birthday Cutie</h1>
+        <h1 className="text-2xl mt-10 mb-2">Happist Birthday Cutie</h1>
         <p>Enjoyyy your dayyy...</p>
       </section>
     </div>
