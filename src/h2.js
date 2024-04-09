@@ -44,7 +44,7 @@ const cards = [
   },
   {
     image: sakshi,
-    message: "This was to make you feel special today..",
+    message: "This was to make you feel special..quack quack!",
   },
 ];
 
