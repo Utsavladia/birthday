@@ -14,6 +14,7 @@ import i6 from "./images/i6.jpg";
 import glass from "./videos/glass.mp4";
 import dance from "./videos/dancing.mp4";
 import sakshi from "./sakshi.jpeg";
+import gg from "./gg.jpg";
 
 const cards = [
   {
@@ -45,6 +46,10 @@ const cards = [
   {
     image: sakshi,
     message: "This was to make you feel special..quack quack!",
+  },
+  {
+    image: gg,
+    message: "hn chotu tmhra to height v match hota h vibes k sath..",
   },
 ];
 
