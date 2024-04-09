@@ -13,6 +13,7 @@ import i5 from "./images/i5.jpg";
 import i6 from "./images/i6.jpg";
 import glass from "./videos/glass.mp4";
 import dance from "./videos/dancing.mp4";
+import sakshi from "./sakshi.jpeg";
 
 const cards = [
   {
@@ -40,6 +41,10 @@ const cards = [
     image: i5,
     message:
       "Always keep some space in your small brain for memories we create..",
+  },
+  {
+    image: sakshi,
+    message: "This was to make you feel special today..",
   },
 ];
 
